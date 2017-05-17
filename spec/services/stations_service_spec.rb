@@ -5,7 +5,8 @@ describe "Service can make an api call" do
     VCR.use_cassette 'service/stations' do
       response = StationService.new('80218')
       response = response.stations
-      response.first.should include("station_name" => 'Walgreens - Denver, CO #1769')
+      response.first.should include("station_name" => 'Walgreens - Denver, CO #1769', "street_address" => "2000 E Colfax")
+
     end
   end
 end
