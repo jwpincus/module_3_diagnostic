@@ -14,10 +14,9 @@ require 'rails_helper'
        fill_in 'zip_code', with: "80203"
        click_on 'Locate'
        expect(page).to have_current_path("/search?utf8=%E2%9C%93&zip_code=80203&commit=Locate")
-       expect(page).to have_selector('station', count: 10)
+       expect(page).to have_selector('div#station', count: 10)
        expect(page).to have_content('Fuel Type: Electric')
        expect(page).to have_content('Fuel Type: LPG')
-       
      end
    end
  end

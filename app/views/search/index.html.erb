@@ -1,1 +1,10 @@
-<%= @stations %>
+<% @stations.each do |station| %>
+  <div class="station">
+    Name: <%= station['station_name'] %><br>
+    Address: <%= station['street_address'] %><br>
+    Fuel Types: <%= station['fuel_type_code'] %><br>
+    Distance: <%= station['distance'] %><br>
+    Access times: <%= station['access_day_times'] %>br
+  </div>
+<% end %>
+# And for each of the stations I should see Name, Address, Fuel Types, Distance, and Access Times
