@@ -2,7 +2,7 @@ require 'rails_helper'
 
  describe 'As a user' do
    context 'I can visit / ' do
-     it "and fill in a zip code" do
+     xit "and fill in a zip code" do
        visit '/'
        fill_in 'zip_code', with: "80203"
        click_on 'Locate'
