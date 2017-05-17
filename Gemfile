@@ -12,9 +12,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'byebug'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'figaro'
+  gem 'faraday'
+  gem 'vcr'
 end
 
 group :development do
   gem 'web-console', '~> 2.0'
 end
-
