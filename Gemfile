@@ -17,6 +17,8 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'faraday'
   gem 'vcr'
+  gem 'capybara'
+  gem 'launchy'
 end
 
 group :development do
